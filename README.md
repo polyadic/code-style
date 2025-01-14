@@ -16,6 +16,10 @@ Shared Code Style for all Polyadic/Funcky projects.
 The rules are configured with the expectation that you build with
 `/p:TreatWarningsAsErrors=true` on CI.
 
+## Credits
+The `Polyadic.CodeStyle` package started as a direct copy of
+[`Messerli.CodeStyle`](https://github.com/messerli-informatik-ag/code-style), licensed under either Apache 2.0 or MIT.
+
 ## License
 Licensed under either of
 
