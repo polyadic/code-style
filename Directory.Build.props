@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<PropertyGroup Label="Shared NuGet Metadata">
+		<Authors>Polyadic</Authors>
+		<PackageLicenseExpression>MIT OR Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/polyadic/code-style</PackageProjectUrl>
+		<Copyright>© Polyadic. All rights reserved.</Copyright>
+	</PropertyGroup>
+	<PropertyGroup Label="Code Style">
+		<AnalysisLevel>5.0</AnalysisLevel>
+	</PropertyGroup>
+	<PropertyGroup Label="C# Settings">
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ArtifactsPath>$(MSBuildThisFileDirectory)artifacts</ArtifactsPath>
+	</PropertyGroup>
+</Project>
