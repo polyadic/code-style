@@ -8,6 +8,6 @@
     </PropertyGroup>
     <ItemGroup>
         <AdditionalFiles Include="$(MSBuildThisFileDirectory)stylecop.json" Link="stylecop.json" Visible="false" InProject="false" />
-        <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)Messerli.CodeStyle.editorconfig" />
+        <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory)Polyadic.CodeStyle.editorconfig" />
     </ItemGroup>
 </Project>

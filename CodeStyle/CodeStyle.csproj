@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
-        <Version>2.3.1</Version>
-        <PackageId>Messerli.CodeStyle</PackageId>
+        <Version>1.0.0</Version>
+        <PackageId>Polyadic.CodeStyle</PackageId>
         <PackageTags>analyzers</PackageTags>
         <Description>Various analyzers bundled with opinionated configuration</Description>
         <NoWarn>$(NoWarn);NU5105;NU5104;NU5128</NoWarn>
