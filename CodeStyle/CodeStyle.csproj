@@ -15,7 +15,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="IDisposableAnalyzers" Version="4.0.2" PrivateAssets="none" />
+        <PackageReference Include="IDisposableAnalyzers" Version="4.0.8" PrivateAssets="none" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup>
