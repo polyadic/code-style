@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Target Name="_PolyadicCodeStylePreventLocalPack" BeforeTargets="Pack" Condition="'$(ContinuousIntegrationBuild)' != 'true' And '$(IsPackable)' == 'true'">
+	<Target Name="_PolyadicCodeStylePreventLocalPack" BeforeTargets="Pack"
+		Condition="'$(ContinuousIntegrationBuild)' != 'true' And '$(IsPackable)' == 'true' And '$(ApiCompatGenerateSuppressionFile)' != 'true'">
 		<PropertyGroup>
 			<_WorkflowUrl>$(PackageProjectUrl)/actions?query=branch%253Amain</_WorkflowUrl>
 			<_LinkPrefix>%1b]8;;</_LinkPrefix>
