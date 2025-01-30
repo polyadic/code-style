@@ -9,7 +9,7 @@ Shared Code Style for all Polyadic/Funcky projects.
 
 ## Usage
 
-```
+```xml
 <PackageReference Include="Polyadic.CodeStyle" Version="..." />
 ```
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.Build.NoTargets">
     <PropertyGroup>
-        <Version>1.0.0</Version>
+        <Version>1.1.0</Version>
         <PackageId>Polyadic.CodeStyle</PackageId>
         <PackageTags>analyzers</PackageTags>
         <Description>Various analyzers bundled with opinionated configuration</Description>
@@ -15,13 +15,11 @@
         <TargetFramework>netstandard2.0</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="IDisposableAnalyzers" Version="4.0.2" PrivateAssets="none" />
+        <PackageReference Include="IDisposableAnalyzers" Version="4.0.8" PrivateAssets="none" />
         <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.556" PrivateAssets="none" />
     </ItemGroup>
     <ItemGroup>
-        <None Include="build\**\*">
-            <Pack>true</Pack>
-            <PackagePath>%(Identity)</PackagePath>
-        </None>
+        <None Include="build\**\*" Pack="true" PackagePath="%(Identity)" />
+        <None Include="buildMultiTargeting\**\*" Pack="true" PackagePath="%(Identity)" />
     </ItemGroup>
 </Project>
