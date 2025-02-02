@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<Target Name="_PolyadicCodeStylePreventLocalPack" BeforeTargets="Pack" Condition="'$(ContinuousIntegrationBuild)' != 'true' And '$(IsPackable)' == 'true'">
-		<PropertyGroup>
-			<_WorkflowUrl>$(PackageProjectUrl)/actions?query=branch%253Amain</_WorkflowUrl>
-			<_LinkPrefix>%1b]8;;</_LinkPrefix>
-			<_LinkInfix>%1b\</_LinkInfix>
-			<_LinkSuffix>$(_LinkPrefix)$(_LinkInfix)</_LinkSuffix>
-		</PropertyGroup>
-		<Error Text="Do not publish locally built packages to NuGet.org.
-Download the artifacts $(_LinkPrefix)$(_WorkflowUrl)$(_LinkInfix)published on GitHub Actions$(_LinkSuffix) instead.
-You can alternatively run `dotnet pack /p:ContinuousIntegrationBuild=true`." />
-	</Target>
+	<!-- Only run when we're not a multi-targeting project as that is covered by buildMultiTargeting/Polyadic.CodeStyle.targets. -->
+	<Import Project="$(MSBuildThisFileDirectory)PreventLocalPack.targets" Condition="'$(TargetFrameworks)' == ''" />
 </Project>
