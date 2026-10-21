@@ -77,6 +77,7 @@
         <Rule Id="SA1139" Action="Error" /><!-- UseLiteralsSuffixNotationInsteadOfCasting -->
         <Rule Id="SA1141" Action="Error" /><!-- UseTupleSyntax -->
         <Rule Id="SA1142" Action="Error" /><!-- ReferToTupleElementsByName -->
+        <Rule Id="SA1143" Action="Error" /><!-- ConditionalExpressionsMustBeFormattedConsistently -->
 
         <!-- Ordering Rules -->
         <Rule Id="SA1200" Action="Error" /><!-- UsingDirectivesMustBePlacedCorrectly -->
@@ -114,7 +115,9 @@
         <Rule Id="SA1312" Action="Error" /><!-- VariableNamesMustBeginWithLowerCaseLetter -->
         <Rule Id="SA1313" Action="Error" /><!-- ParameterNamesMustBeginWithLowerCaseLetter -->
         <Rule Id="SA1314" Action="Error" /><!-- TypeParameterNamesMustBeginWithT -->
+        <Rule Id="SA1315" Action="Error" /><!-- ParameterNamesMustMatchInheritedNames -->
         <Rule Id="SA1316" Action="Error" /><!-- TupleElementNamesShouldUseCorrectCasing -->
+        <Rule Id="SA1317" Action="Error" /><!-- IdentifiersMustUseLatinLetters -->
 
         <!-- Maintainability Rules -->
         <Rule Id="SA1119" Action="None" /><!-- StatementMustNotUseUnnecessaryParenthesis -->
@@ -211,10 +214,13 @@
         <Rule Id="SA1650" Action="None" /><!-- ElementDocumentationMustBeSpelledCorrectly (Removed rule) -->
         <Rule Id="SA1651" Action="Error" /><!-- DoNotUsePlaceholderElements -->
         <Rule Id="SA1652" Action="None" /><!-- EnableXmlDocumentationOutput (Removed rule) -->
+        <Rule Id="SA1653" Action="Error" /><!-- PartialTypesMustHaveOnlyOneSummary -->
+        <Rule Id="SA1654" Action="Error" /><!-- UseGenericBracesInCref -->
 
         <!-- Alternative  Rules -->
         <Rule Id="SX1101" Action="Error" /><!-- DoNotPrefixLocalMembersWithThis -->
         <Rule Id="SX1309" Action="Error" /><!-- FieldNamesMustBeginWithUnderscore -->
         <Rule Id="SX1309S" Action="Error" /><!-- StaticFieldNamesMustBeginWithUnderscore -->
+        <Rule Id="SX1412" Action="None" /><!-- StoreFilesAsUtf8WithoutBom (opt-in alternative to SA1412) -->
     </Rules>
 </RuleSet>

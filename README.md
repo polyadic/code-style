@@ -16,6 +16,12 @@ Shared Code Style for all Polyadic/Funcky projects.
 The rules are configured with the expectation that you build with
 `/p:TreatWarningsAsErrors=true` on CI.
 
+## Releasing
+1. Bump `<Version>` in `CodeStyle/CodeStyle.csproj` and add a changelog entry.
+2. Merge to `main`, then create and push a tag matching the version (e.g. `1.2.0`).
+3. The [Publish Release Packages](.github/workflows/publish-release.yml) workflow packs
+   and pushes the package to nuget.org via trusted publishing.
+
 ## Credits
 The `Polyadic.CodeStyle` package started as a direct copy of
 [`Messerli.CodeStyle`](https://github.com/messerli-informatik-ag/code-style), licensed under either Apache 2.0 or MIT.
