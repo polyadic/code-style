@@ -1,4 +1,17 @@
 # Changelog
+
+## 1.2.3
+
+* Fixed SA1649 firing on non-class types (see [StyleCopAnalyzers issue #4377](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/4377))
+
+## 1.2.2
+
+* Improve NuGet package by including the readme and other metadata.
+
+## 1.2.1
+
+* Fixed SA1143 issues after our report (see [StyleCopAnalyzers issue #4377](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/issues/4367))
+
 ## 1.2.0
 * Update `StyleCop.Analyzers` from 1.2.0-beta.556 to 1.3.149-beta. \
   See their [Release Notes](https://github.com/DotNetAnalyzers/StyleCopAnalyzers/releases) for details. Highlights:
